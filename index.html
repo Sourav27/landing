@@ -1,0 +1,385 @@
+                                                                                                                                                                                                                                                                <!DOCTYPE html>
+<html>
+<head>
+	<title>Landing page</title>
+	<!--- scripts
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>-->
+	<script type="text/javascript" src="js/jquery-1.7.min.js"></script>
+    <script src="js/jquery.knob.js"></script>
+	<script src="js/jquery.ccountdown.js"></script>
+	<script src="js/init.js"></script>
+	<script src="http://maps.googleapis.com/maps/api/js"></script>
+	<!--script src="js/modernizr.custom.js"></script-->
+	<!-- styles-->
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/anim.css">
+	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	
+	
+	
+	
+</head>
+	<body>
+
+	<img src="img/blue.jpg" style="width:100%;height:100%;position:absolute;z-index:-1"/>
+	<navbar class="navbar">
+	<div id="googleMap" style="position: absolute;
+height:50%;display:block;top:35%;opacity:0"></div>
+<div style="position:relative;left:200%;top:-50px">
+		<img src="img/iitm_logo.png"/>
+		<img src="img/logomea.png"/></div>
+		
+	</navbar>
+	<ul class="form">
+	 <li><a href='#' id="" onclick=goto('home')><span id="option1">Home</span></a></li>
+    <li> <a href='#events' id="events" onclick=goto('events')><span id="option2">Events</span></a></li>
+   
+
+     <li> <a href='#spons'  id="sponsors" onclick=goto('sponsors')><span id="option3">Sponsors</span></a></li>
+    <li> <a href='#contact' id="contact" onclick=goto('contact')><span id="option4">Contact</span></a></li>
+  <li> <a href='#about' id="about" onclick=goto('about')><span id="option5">About</span></a></li>
+
+			</ul>
+			
+	<div>
+		
+		<div id="level">
+		<div id="content">
+			<div id="gears">
+				<div id="gears-static"></div>
+				<div id="gear-system-1">
+					<div class="shadow" id="shadow15"></div>
+					<div id="gear15"></div>
+					<div class="shadow" id="shadow14"></div>
+					<div id="gear14"></div>
+					<div class="shadow" id="shadow13"></div>
+					<div id="gear13"></div>
+				</div>
+				<div id="gear-system-2">
+					<div class="shadow" id="shadow10"></div>
+					<div id="gear10"></div>
+					<div class="shadow" id="shadow3"></div>
+					<div id="gear3"></div>
+				</div>
+				<div id="gear-system-3">
+					<div class="shadow" id="shadow9"></div>
+					<div id="gear9"></div>
+					<div class="shadow" id="shadow7"></div>
+					<div id="gear7"></div>
+				</div>
+				<div id="gear-system-4">
+					<div class="shadow" id="shadow6"></div>
+					<div id="gear6"></div>
+					<div id="gear4"></div>
+				</div>
+				<div id="gear-system-5">
+					<div class="shadow" id="shadow12"></div>
+					<div id="gear12"></div>
+					<div class="shadow" id="shadow11"></div>
+					<div id="gear11"></div>
+					<div class="shadow" id="shadow8"></div>
+					<div id="gear8"></div>
+				</div>
+				<div class="shadow" id="shadow1"></div>
+				<div id="gear1"></div>
+				<div id="gear-system-6">
+					<div class="shadow" id="shadow5"></div>
+					<div id="gear5"></div>
+					<div id="gear2"></div>
+				</div>
+				<div class="shadow" id="shadowweight"></div>
+				<div id="chain-circle"></div>
+				<div id="chain"></div>
+				<div id="weight"></div>
+			</div>
+		</div>
+	</div>
+	</div>
+		
+<div class="logo"><img src="img/logo.png" style="width:80%"></div>
+							
+							<div class="countdown">
+								<div class="ccounter">
+								 <ul class="row count-down">                       
+        <li class="col-md-3 col-sm-6">   
+          <input class="knob days" data-readonly=true data-min="0" data-max="365" data-width="100" data-height="100" data-thickness="0.07" data-fgcolor="#34aadc" data-bgColor="#e1e2e6" data-angleOffset="180" data-skin="tron">
+          <span id="days-title" class="clock">Days</span>
+        </li>    
+        <li class="col-md-3 col-sm-6"> 
+          <input class="knob hour" data-readonly=true data-min="0" data-max="24" data-width="100" data-height="100" data-thickness="0.07" data-fgcolor="#4cd964" data-bgColor="#e1e2e6" data-angleOffset="180" data-skin="tron">
+          <span id="hours-title" class="clock">Hours</span>
+        </li>    
+        <li class="col-md-3 col-sm-6"> 
+          <input class="knob minute" data-readonly=true data-min="0" data-max="200" data-width="100" data-height="100" data-thickness="0.07" data-fgcolor="#ff9500" data-bgColor="#e1e2e6" data-angleOffset="180" data-skin="tron">
+          <span id="mins-title" class="clock">Minutes</span>
+        </li>    
+        <li class="col-md-3 col-sm-6"> 
+          <input class="knob second" data-readonly=true data-min="0" data-max="60" data-width="100" data-height="100" data-thickness="0.07" data-fgcolor="#ff3b30" data-bgColor="#e1e2e6" data-angleOffset="180" data-skin="tron">
+          <span id="secs-title" class="clock">Seconds</span>
+        </li>                
+      </ul>        
+								</div>
+							</div>
+
+
+
+
+
+<div class="animated hidden fadeOutDownBig events">
+	<div class="event_d animdiv" val="one">25+ EVENTS</div>
+<!--	<div class="event_d animdiv">5000+ foot fall</div>
+	-->
+		<div  >
+		<ul class="event_disp">
+			<li>MEA Projects</li>
+			<li>MEA Shows</li>
+			<li>Robo soccer</li>
+			<li>Manual Robotics</li>
+			<li>Autonomous Robotics</li>
+			<li>Junkyard wars</li>
+			<li>Lectures</li>
+			<li>IDP</li>
+			<li>Paper Presentation</li>
+			<li>Workshops</li>
+		</ul>
+		
+		
+		
+		
+		</div>
+
+</div>
+
+<div class="animated hidden fadeOutDownBig sponsors">
+<a href="https://drive.google.com/file/d/0B1xKlbItxJaLWkwtSnFLR3VkYU80bllMb0w5RGowMUJpaXFJ/view"><button class="spons_b btn btn-1 btn-1c">spons brochure</button></a>
+<div><img src="img/sponsors.png" style="width:80%;left:10%;position:relative"></div>
+
+	<div class="sponslogo1" ><img src="sponsimg/harshaes.png"/></div >
+	<div class="sponslogo2" ><img src="sponsimg/shell.png"/></div>
+	<div class="sponslogo3" ><img src="sponsimg/lg.png"/></div>
+	<div class="sponslogo4" ><img src="sponsimg/indian.png"/></div>
+	<div class="sponslogo5" ><img src="sponsimg/2019.png"/></div>
+	<div class="sponslogo6" ><img src="sponsimg/alstrut.png"/></div>
+	<div class="sponslogo7" ><img src="sponsimg/expertshub.png"/></div>
+	<div class="sponslogo8" ><img src="sponsimg/AVOCarbon.png"/></div>
+	<div class="sponslogo9" ><img src="sponsimg/robospons.png"/></div>
+	<div class="sponslogo10" ><img src="sponsimg/mmfestlogo.png"/></div>
+	<div class="sponslogo11" ><img src="sponsimg/solidworks.png"/></div>
+
+</div>
+<div class="animated hidden fadeOutDownBig contact">
+	
+<div class="disp_cont">
+	
+<center style="left: 50px;top: 30px;"><h2 style="margin-top:10px !important;">Secretaries</h2></center>
+	<ul>
+	<li>Srinivas Ramanand</li>
+<li>8807488931;9566098334</li>
+<li>srinivasramanand@gmail.com</li>
+	</ul>
+	<ul>
+		<li>Sai Teja</li>
+<li>9940640907	</li>
+<li>saiteja.mallela@gmail.com	</li>
+	</ul>
+
+</div>
+<div class="disp_cont" style="">
+<center  style="top: 30px;" >	<h2 style="margin:0px !important;">Cores</h2></center>
+	<ul ><li><h2>Publicity</h2></li>
+		<li>Anand Babu A	</li>
+<li>7598459521 </li>
+<li>anand10327babu@gmail.com</li>
+	</ul>
+	<ul><li><h2>Sponsorship</h2>	</li>
+		<li>R. ANAND</li>
+<li>+91-9677165188 </li>
+<li>anandraghavendra1994@gmail.com</li>
+	</ul>
+	<ul><li><h2>Sponsorship</h2>	</li>
+		<li>Kushal M B</li>
+<li>+91-9884299032 </li>
+<li>kushal2202@gmail.com</li>
+	</ul>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<div class="animated hidden fadeOutDownBig about">
+	<div class="disp_about">
+		
+		<p>
+		The Mechanical Engineers' Association, IIT Madras is all set to unveil its premier spectacle, Mechanica in its all new avatar in 2015. Mechanica, the annual techno-managerial festival hosted by the department of mechanical engineering is celebrated in an earnest spirit to foster the seeds of mechanical engineering in the bright young minds across the country. It brings together the three pioneers of technological revolution- talented students, erudite professors and dynamic industries and strikes a perfect amalgamation among them, creating an environment that revels in ingenuity and allegiance.
+
+Mechanica has always committed itself to unparalleled quality and this year, we intend to raise the bar with a more refined set of enthralling events, enchanting lectures and workshops that compel you to "IDEATE INNOVATE AND COMPETE". The events are meticulously structured to lend an additional dimension to the students, providing them a channel to unlearn and re-learn the subtleties of engineering by getting their hands dirty. Appreciating the pervasiveness of innovation across the spectrum of academic communities, Mechanica assembles a diverse ensemble of events catering to students across various domains alike.
+
+We fervently hope that Mechanica-2015 overhauls the stupendous glory of its preceding editions for the better, breaking the shackles to set up new boundaries of innovation and serves to be yet another feather in the illustrious cap of Mechanical Engineering.
+		</p>
+	</div>
+
+
+</div>
+				
+    <script type="text/javascript" src="js/nprogress.js"></script>
+    <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
+    
+
+<div id="overlay">
+<center><img src="img/preload.gif"></center>
+<p style="position:relative;color:black;text-align:center;font-size:20px;">LOADING...</p>
+</div>
+ <span id="load-images" style="display:none">
+                <img src="img/blue.jpg" alt=""/>
+                 <img src="img/event.jpg" alt=""/>
+                  <img src="img/contact.png" alt=""/>
+                  <img src="img/logo.png" alt=""/>
+                 <img src="http://i.imgur.com/FgFnjks.png/>
+             
+
+                      </span>
+<script src="http://maps.googleapis.com/maps/api/js"></script>		
+	
+		<script>
+			
+			$(".ccounter").ccountdown(2015,03,12,'00:00');
+			var previous="home";
+function goto(event)
+{
+	window.location.href="#"+event;
+	if(previous!=event)
+	{
+		
+			
+	 $('#'+event).children().addClass('active');
+	 $('#'+previous).children().removeClass('active');
+	 $('.'+previous).toggleClass('hidden');	
+	 $('.'+previous).toggleClass("fadeOutDownBig");	
+	 $('.'+previous).removeClass('fadeInDownBig');
+     $('.'+event).addClass("fadeInDownBig");
+	 $('.'+event).toggleClass("fadeOutDownBig");
+	 $('.'+event).toggleClass('hidden');
+	 if(event=='contact')
+		{
+			$('#googleMap').css({'display':'block','opacity':'1'});
+		}
+		else $('#googleMap').css({'display':'none','opacity':'1'});
+	 previous=event;
+	}
+		}
+		</script>
+		<script>
+var myCenter=new google.maps.LatLng(12.99074478,80.23072655);
+
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:17,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+
+var infowindow = new google.maps.InfoWindow({
+  content:"<span style='color:red'>MSB</span>"
+  });
+
+infowindow.open(map,marker);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+<script>
+	
+/*
+$.fn.clicktoggle = function(a, b) {
+    return this.each(function() {
+        var clicked = false;
+        $(this).click(function() {
+            if (clicked) {
+                clicked = false;
+                return b.apply(this, arguments);
+            }
+            clicked = true;
+            return a.apply(this, arguments);
+        });
+    });
+};
+
+$( ".drop" ).clicktoggle(
+      function(){
+      $('.ribbon>a').slideUp(500);
+      },
+      function(){
+       $('.ribbon>a').slideDown(500);
+      }
+  );  */
+$('ul.form li a').click(
+			function(e) {
+				e.preventDefault(); // prevent the default action
+				e.stopPropagation; // stop the click from bubbling
+				$(this).closest('ul').find('.selected').removeClass('selected');
+				$(this).parent().addClass('selected');
+			});
+
+</script>
+<script>
+var uncover =  function(){
+                $('body').unbind('click');
+                //$('html, body').animate({
+                    //scrollTop: 0
+                //},10,function(){
+                    
+                    $('#overlay').fadeOut(1000);
+                    $('#sai').fadeIn(1000);
+                    $(this).css('overflow','hidden');
+                
+}
+                NProgress.start();
+    var doneLoad = false;
+    var slideshow = document.querySelector('#load-images');
+    var pics = document.querySelectorAll('#load-images > img');
+    imagesLoaded( pics, function() {
+        if(!doneLoad)NProgress.inc();
+    });
+    imagesLoaded( slideshow, function() 
+    {       
+    	$('#overlay p').html('enter now');
+        $('body').bind('click',uncover);
+        NProgress.done();
+        doneLoad = true;
+    });
+
+
+    </script>
+	</body>
+</html>
+
+                            
+                                
+                            
+                            
+                            
+                            
+                            
+                            
+                            
